@@ -1,4 +1,4 @@
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [ ];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 let getsEl = (e) => document.querySelector(e); //Query selector function
 
@@ -49,7 +49,7 @@ function clearList() { // function for clear all tasks in list
 }
 
 function generateList(taskArray) { // function for generate list
-    for (let i = 0; i <= taskArray.length; i++) {
+    for (let i = 0; i < taskArray.length; i++) {
         let li = listTemplate(taskArray[i]);
         ul.appendChild(li);
     }
