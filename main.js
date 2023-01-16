@@ -27,7 +27,7 @@ signIn.addEventListener("submit", function () {
 
 function submit() {
     if (signIn_login.value === login && signIn_pass.value === pass) {
-        window.location.assign("todo-list/index.html")
+        window.location.assign("https://olegploshchynskiy.github.io/todo-list/")
     } else {
         alert("Wrong password")
     }
